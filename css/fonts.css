@@ -1,0 +1,29 @@
+@font-face{
+     font-family: "AvenirNext-DemiBold";
+     src: url(../fonts/AvenirNext-DemiBold.ttf) format('truetype');
+}
+
+@font-face{
+     font-family: "AvenirNext-Medium";
+     src: url(../fonts/AvenirNext-Medium.ttf) format('truetype');
+}
+
+@font-face{
+     font-family: "AvenirNext-Regular";
+     src: url(../fonts/AvenirNext-Regular.ttf) format('truetype');
+}
+
+@font-face{
+     font-family: "AvenirNext-UltraLight";
+     src: url(../fonts/AvenirNext-UltraLight.ttf) format('truetype');
+}
+
+@font-face{
+     font-family: "BebasNeue-Light";
+     src: url(../fonts/BebasNeue-Light.ttf) format('truetype');
+}
+
+@font-face{
+     font-family: "BebasNeue-Regular";
+     src: url(../fonts/BebasNeue-Regular.ttf) format('truetype');
+}

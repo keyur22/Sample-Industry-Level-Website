@@ -1,0 +1,762 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: #F1F1F1;
+}
+
+/*Navbar*/
+.nav ul{
+  padding: 0 5%;
+  list-style: none;
+  background: #de201f;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav li a{
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: arial;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+
+.nav li a:hover{
+  border-bottom: 2px solid white;
+}
+
+.nav #brand a:hover{
+  border-bottom: 2px solid transparent;
+}
+
+.nav li:last-child{
+  display: none;
+}
+
+.nav #brand{
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.nav #right{
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.nav #brand a{
+  font-family: "BebasNeue-Regular";
+  font-size: 25px;
+}
+
+/*MenuBar*/
+.menu {
+  display: flex;
+  background: white;
+}
+
+.menu #language{
+  display: flex;
+  align-items: center;
+  width: 20%;
+  padding-left: 5%;
+}
+
+.menu #language li a, .menu #trending li a{
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: arial;
+  font-size: 13px;
+}
+
+.menu #language li:first-child a, .menu #trending li:first-child a{
+  font-weight: bold;
+}
+
+.menu #language li:first-child a:hover, .menu #trending li:first-child a:hover{
+  cursor: auto;
+}
+
+.dropdown{
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  font-size: 13px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: arial; 
+  margin: 0; 
+  padding: 15px;
+}
+
+.dropdown .dropbtn:hover{
+  cursor: pointer;
+}
+
+.dropdown .dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content a{
+  font-weight: normal!Important;
+  width: 100%;
+  background: white;
+}
+
+.dropdown .dropdown-content a:hover{
+  background: #ddd!Important;
+  cursor: pointer!Important;
+}
+
+.show{
+  display: block!Important;
+}
+
+.menu #trending{
+  display: flex;
+  align-items: center;
+  padding-left: 1%; 
+}
+
+.menu #trending li:not(:first-child) a:hover{
+  background: #ddd;
+}
+
+.menu #trending li .dropdown{
+  display: none;
+}
+
+/*Main Content*/
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 5% 30px 5%;
+}
+
+.main .mainContent{
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+/*Header Section*/
+.mainContent #header{ 
+  width: 100%;
+  height: 270px;
+  background: black;
+  background-size: cover;
+  position: relative;
+}
+
+.mainContent #header #media{
+  position: absolute;
+  bottom: 20%; left: 3%;
+  background: #f5a623;
+  border: 1px solid #f5a623;
+  border-radius: 10px;
+  color: white;
+  font-family: "AvenirNext-DemiBold"; 
+  padding: 5px;
+}
+
+.mainContent #header #media:hover{
+  cursor: pointer;
+  background: red;
+  border-color: red;
+}
+
+.mainContent #header #title{
+  position: absolute;
+  bottom: 7%; left: 3%;
+  font-family: "AvenirNext-Regular";
+  font-size: 25px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.mainContent #header #date{
+  position: absolute;
+  right: 2%; bottom: 5%;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 17px;
+  color: white;
+}
+
+.mainContent #header #date:hover{
+  cursor: pointer;
+  color: black;
+  background: white;
+}
+
+/*Address Section*/
+.mainContent #address{
+  background: white;
+  color: black;
+  width: 30%;
+  padding: 2%;
+}
+
+#address #map{
+  width: 100%;
+  height: 130px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.heading{
+  font-weight: bold;
+  color: black;
+  font-size: 0.9em;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "AvenirNext-DemiBold";
+}
+
+.addr{
+  color: grey;
+}
+
+.mainContent .divider1{
+  width: 0.1%;
+  margin: 3% 0;
+  background: grey;
+}
+
+/*Details Section*/
+.mainContent #details{
+  width: 69.9%;
+  background: white;
+  padding: 2%;
+}
+
+.mainContent #details #gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainContent #details #gallery img{
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+.mainContent #details #cost{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.mainContent #details #cost .items{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.mainContent .items #total{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding-right: 60px;
+}
+
+.mainContent #cost #purchaseBtn{
+  align-self: center;
+}
+
+.mainContent #details #cost  .button{
+  background: #de201f;
+  color: white;
+  border: 1px solid #de201f;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+.mainContent #details #cost  .button:hover{
+  cursor: pointer;
+  background: red;
+}
+
+.mainContent #details #cost .divider2{
+  width: 0.2%;
+  margin-bottom: 20%;
+  background: black;
+}
+
+.mainContent #details #cost .info{
+  width: 49.8%;
+  padding-left: 60px;
+  padding-top: 1%;
+
+}
+
+/*Side Content*/
+.main .sideContent{
+  width: 25%;
+  padding-right: 15px;
+}
+
+.main .sideContent #search{
+  background: white;
+  padding: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.main .sideContent .sideHeading{
+  font-family: "AvenirNext-DemiBold"
+}
+
+.main .sideHeading .fa-search{
+  color: #de201f;
+}
+
+.main .sideContent #search input{
+  padding: 3% 4%;
+  text-align: left;
+  font-family: "AvenirNext-Regular";
+  margin: 2%;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+.main .sideContent #search #locationSearch{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.main #locationSearch #mainInput{
+  width: 100%;
+  color: #de201f;
+}
+
+.main #locationSearch .sideInput{
+  width: 46%;
+  color: grey;
+}
+
+.main .sideContent #search .button, .main .sideContent #newsletter .button{
+  background: #de201f;
+  color: white;
+  border: 1px solid #de201f;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-weight: bold;
+}
+
+.main .sideContent #search .button:hover, .main .sideContent #newsletter .button:hover{
+  cursor: pointer;
+  background: red;
+}
+
+.main .sideContent #ad{
+  background: white;
+  padding: 5%;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.main .sideContent #ad .container-img{
+  width: 100%;
+  height: 150px;
+  background: grey;
+  overflow: hidden; 
+  margin-bottom: 5%;
+}
+
+.main #ad .container-img img{
+  min-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main #ad .adHeading{
+  font-family: "AvenirNext-DemiBold";
+  margin-bottom: 5%;
+}
+
+.main #ad #adFooter{
+  color: #de201f;
+  font-family: "AvenirNext-Regular";
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .sideContent #newsletter{
+  background: white;
+  padding: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.main .sideContent .sideHeading{
+  font-family: "AvenirNext-DemiBold";
+}
+
+.main #newsletter .fa-inbox{
+  color: #de201f;
+}
+
+.main #newsletter input{
+  padding: 3% 4%;
+  text-align: left;
+  font-family: "AvenirNext-Regular";
+  margin: 2%;
+  border: 1px solid grey;
+  border-radius: 2px;
+  color: #de201f;
+}
+
+
+/*Footer Section*/
+.footer{
+  background: #272727;
+  color: white;
+  display: flex;
+  padding: 3% 5%;
+}
+
+.footer #footerlogo{
+  width: 41%;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+.footer #footerlogo #logo{
+  color: #d54436;
+  font-family: "BebasNeue-Regular";
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.footer .subContent{
+  color: white;
+  text-decoration: none;
+  font-family: "AvenirNext-Regular";
+  line-height: 25px;
+  border-bottom: 1px solid transparent;
+}
+
+.footer .subContent:hover{
+  border-bottom: 1px solid white;
+}
+
+.footerHeading{
+  color: #d54436;
+  font-family: "AvenirNext-DemiBold";
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.footer #footerContent1{
+  width: 17%;
+}
+
+.footer #footerContent2{
+  width: 17%;
+}
+
+.footer #footerContent3{
+  width: 25%;
+  padding-right: 5%;
+}
+
+.footer #footerContent3 #icons,.footer #footerContent3 #badge{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer #footerContent3 #icons .social{
+  font-size: 40px; 
+  background: #cc201f; 
+  border-radius: 40px; 
+  color: #272727;
+  padding: 10px;
+}
+
+.footer #footerContent3 #icons .social:hover{
+  background: white;
+}
+
+.footer #badge .badge-container{
+  width: 50%;
+  overflow: hidden;
+}
+
+.footer .badge-container img{
+  max-width: 100%;
+  height: auto; 
+}
+
+
+@media only screen and (max-width: 1200px){
+
+  .nav ul{
+    display: block;
+  }
+
+  .nav ul li:not(:first-child){
+    display: none;
+  }
+
+  .nav ul li:last-child{
+    display: block;
+    position: absolute;
+    top: 4px; right: 5%;
+  }
+
+  .nav #brand{
+    position: relative;
+    top: 4px;
+  }
+
+  .nav .responsive{
+    display: block;
+    text-align: center;
+  }
+
+  .nav .responsive li:not(:first-child){
+    display: block;
+  }
+
+  .menu #trending li .dropdown{
+    display: block;
+  }
+
+  .menu #trending li:not(:last-child){
+    display: none;
+  }
+
+  .menu #trending .dropdown-content li{
+    display: block;
+  }  
+
+  .menu #language, .menu #trending{
+    width: 50%;
+    justify-content: center;
+  }
+
+  .footer #footerlogo{
+    width: 35%;
+  }
+
+  .footer #footerContent1{
+    width: 20%;
+  }
+
+  .footer #footerContent2{
+    width: 20%;
+  }
+
+  .footer #footerContent3{
+    width: 25%;
+    padding-right: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 950px){
+
+  .main .mainContent{
+    width: 100%;
+    padding: 0;
+  }
+
+  .main .sideContent{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin-top: 3%;
+  }
+
+  .main .sideContent #search{
+    width: 33.33%;
+    margin-right: 1%;
+  }
+
+  .main .sideContent #ad{
+    width: 33.33%;
+    margin-right: 1%;
+  }
+
+  .main .sideContent #newsletter{
+    width: 33.33%;
+  }
+
+  .footer{
+    flex-wrap: wrap;
+  }
+
+  .footer #footerlogo{
+    width: 50%;
+    margin-bottom: 5%;
+  }
+
+  .footer #footerContent1{
+    width: 50%;
+  }
+
+  .footer #footerContent2{
+    width: 50%;
+    padding-left: 5%;
+  }
+
+  .footer #footerContent3{
+    width: 50%;
+    padding-right: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 780px){
+
+  .mainContent #header #media{
+    bottom: 30%; left: 3%;
+  }
+
+  .mainContent #header #title{
+    bottom: 7%; left: 3%;
+  }
+
+  .mainContent #header #date{
+    bottom: auto; top: 2%;
+  }
+
+  .main .sideContent{
+    flex-wrap: wrap;
+  }
+
+  .main .sideContent #ad{
+    width: 100%;
+    order: -1;
+    margin-bottom: 3%;
+    margin-right: auto;
+  }
+
+  .main .sideContent #search{
+    width: 49%;
+    margin-right: 2%;
+  }
+
+  .main .sideContent #newsletter{
+    width: 49%;
+    margin-right: auto;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 480px){
+
+  .menu{
+    display: block;
+  }
+
+  .menu #language, .menu #trending{
+    display: flex;
+    width: 100%;
+  }
+
+  .drop-down-content li a{
+    padding: 15px!Important;
+  }
+
+  .menu #language li:first-child a, .dropdown .dropbtn{
+    font-size: 15px;
+  }
+
+  .mainContent #header #title{
+    bottom: 5%; left: 3%;
+  }
+
+  .mainContent #address{
+    width: 100%;
+    padding: 4%;
+  }
+
+  .mainContent #details{
+    width: 100%;
+    padding: 4%;
+  }
+
+  .mainContent #details #cost .items{
+    width: 100%;
+  }
+
+  .mainContent #details #cost .divider2{
+    display: none;
+  }
+
+  .mainContent #details #cost .info{
+    width: 100%;
+    margin-top: 5%;
+    padding: 0;
+  }
+
+  .main .sideContent #search{
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 3%;
+  }
+
+  .main .sideContent #newsletter{
+    width: 100%;
+  }
+
+  .footer{
+    padding: 10%;
+  }
+
+  .footer #footerlogo{
+    width: 100%;
+    margin-bottom: 15%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer #footerContent1{
+    width: 100%;
+    margin-bottom: 15%;
+    text-align: center;
+  }
+
+  .footer #footerContent2{
+    width: 100%;
+    margin-bottom: 15%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer #footerContent3{
+    width: 100%;
+    padding-right: 5%;
+    text-align: center;
+  }
+
+}

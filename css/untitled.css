@@ -1,0 +1,129 @@
+/*Navbar Background color*/
+.navbar-custom{
+     background-color: #de201f;
+}
+
+/*Navbar Toggle Button*/
+.navbar-toggler {
+    background-image: none;
+    border: 1px solid white;
+}
+
+/*Navbar Toggle Icon*/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*Brand for mobile devies*/
+#brand_mob{
+     display: flex;
+     list-style: none;
+     color: white;
+     font-weight: bold;
+     margin: 0;
+     padding:0;
+     align-items: center;
+}
+
+.brand-bold{
+     font-family: BebasNeue-Regular;
+     margin-right: 10px;
+     font-size: 26px;
+     line-height: 27px;
+     margin-bottom: -5px;
+     border-right: 1px solid white;
+     padding-right: 10px;
+
+}
+
+.brand-light{
+     font-family: AvenirNext-Regular;
+     font-size: 15px;
+     line-height: 16px;
+}
+
+#brand{
+     display: none;
+}
+
+/*Navbar List*/
+#navlist{
+     list-style: none;
+     color: white;
+     margin-left:0;
+}
+
+#navlist li:hover{
+     cursor: pointer;
+     border-bottom: 5px solid white;
+     transition: 5s ease-in-out;
+
+}
+
+/*Nav2*/
+#nav2{
+     background-color: white;
+     height: 50px;
+     color: black;
+}
+
+
+/*For devices greater than 991px width*/
+@media only screen and (min-width: 991px){
+
+     /*Hide Brand mobile*/
+     .navbar-brand{
+          display: none;
+     }
+
+     /*Show brand desktop*/
+     #brand{
+          display: block;
+     }
+
+     #brand_desk{
+          display: flex;
+          list-style: none;
+          color: white;
+          font-weight: bold;
+     }
+
+     #navlist{
+          display: flex;
+          list-style: none;
+          padding: 0px 40px;
+          color: white;
+          font-family: 'AvenirNext-DemiBold';
+          font-weight: bold;
+          font-size: 16px;
+          margin: 0;
+          height: 50px;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+     }
+
+     /*Margin between items*/
+     #navlist li:not(:first-child){
+          margin-right: 20px;
+     }
+
+     /*Navbar Items*/
+     #navlist li:hover{
+          cursor: pointer;
+          border-bottom: 5px solid white;
+          transition: 5s ease-in-out;
+     }
+
+     /*Navbar Brand*/
+     #brand{
+          margin-right: auto;
+     }
+
+     #search{
+          margin-left: auto;
+          margin-right: 30px;
+     }
+
+
+}

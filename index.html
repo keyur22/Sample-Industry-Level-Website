@@ -1,0 +1,289 @@
+<!-- HTML5 -->
+<!doctype html>
+<html lang = "en">
+<head>
+
+	<!-- Set character encoding for the document -->
+	<meta charset = "utf-8">
+
+	<!-- Instruct Internet Explorer to use its latest rendering engine -->
+	<meta http-equiv = "x-ua-compatible" content = "ie=edge">
+
+	<!-- Viewport for responsive web design -->
+	<meta content = "width = device-width, initial-scale = 1, shrink-to-fit = no" name = "viewport">
+
+	<!-- Document Title -->
+	<title>Your Story</title>
+
+	<!-- Meta Description -->
+	<meta name = "description" content = "Share Your Stories with us">
+
+	<link rel = "stylesheet" type = "text/css" href = "css/reset.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/fonts.css">
+	<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+	
+</head>
+<body>
+	<div class = "container">
+		<div class = "header">
+			<div class = "nav">
+				<ul>
+					<li id = "brand"><a href = "#">Your Story</a></li>
+					<li><a href = "#">Her Story</a></li>
+					<li><a href = "#">Social Story</a></li>
+					<li><a href = "#">YS Profiles</a></li>
+					<li><a href = "#">YS Workplaces</a></li>
+					<li><a href = "#">YS Jobs</a></li>
+					<li><a href = "#">YS TV</a></li>
+					<li><a href = "#">YS Events</a></li>
+					<li id = "right"><a href = "#"><i class="fas fa-search"></i></a></li>
+					<li><a href = "#"><i class="fas fa-user-circle"></i></a></li>	
+					<li><a class = "icon" onclick = "navbar();">&#9776;</a></li>
+				</ul>
+			</div>
+			<div class = "menu">
+				<ul id = "language">
+					<li><a href = "#">Language</a></li>
+					<li>
+						<div class ="dropdown">
+							<button class = "dropbtn" onclick = "showDropDown()">
+								ENG <i class = "fa fa-caret-down"></i>
+							</button>
+							<div class = "dropdown-content" id = "lang">
+								<ul>
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+								</ul>	
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul id = "trending">
+					<li><a href="#">Trending Events:</a></li>
+					<li><a href="#">Techsparks</a></li>
+					<li><a href="#">Startup Awards</a></li>
+					<li><a href="#">Loremiso</a></li>
+					<li><a href="#">Ipsuiemo</a></li>
+					<li><a href="#">Toraine</a></li>
+					<li><a href="#">Meiacoel</a></li>
+					<li>
+						<div class ="dropdown">
+							<button class = "dropbtn" onclick = "showtrendDropDown()">
+								TRENDING <i class = "fa fa-caret-down"></i>
+							</button>
+							<div class = "dropdown-content" id = "trend">
+								<ul>
+									<li><a href="#">Techsparks</a></li>
+									<li><a href="#">Startup Awards</a></li>
+									<li><a href="#">Loremiso</a></li>
+									<li><a href="#">Ipsuiemo</a></li>
+									<li><a href="#">Toraine</a></li>
+									<li><a href="#">Meiacoel</a></li>
+								</ul>	
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class = "main">
+			<div class = "mainContent">
+				<div id = "header">
+					<button id = "media">YourStory Media</button>
+					<div id = "title">Techsparks 2016: On the Beach	</div>
+					<button id = "date">Jan 21<br>2016</button>
+				</div>
+				<div id = "address">
+					<div class = "heading">Address</div><br>
+					<div class = "addr">
+						216 Church Road, 5th Avanue, Lorem, Brooklyn Street, New York - 089613
+					</div>
+					<div id = "map"></div>
+					<div class = "heading">Hours</div><br>
+					<div class = "addr">8.00 PM to 12 Midnight</div><br><br>
+					<div class = "heading">Organizer</div><br>
+					<div class = "addr">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor arcu, sagittis ut nibh ac, elementum dapibus eros. Nullam nec augue congue, vulputate quam vel, rutrum erat. Suspendisse vel dolor euismod, feugiat ante nec, fermentum ante. Cras pulvinar auctor nulla, ac elementum dui ullamcorper sit amet. 
+					</div><br><br>
+					<div class = "heading">Digital Presence</div><br>
+					<div class = "addr">
+						<ul>
+							<li>www.yourstory.com</li>
+							<li>www.techsparks.com</li>
+							<li>www.facebook.com/techsparks</li>
+							<li>www.twitter.com/techsparks</li>						
+						</ul>
+					</div><br>
+				</div>
+				<div class="divider1"></div>
+				<div id = "details">
+					<div class = "heading">Details</div><br>
+					<div class = "addr">
+						Curabitur ornare, nisi eu venenatis ullamcorper, arcu sem finibus arcu, sit amet ultricies mauris turpis venenatis sem. Integer porta iaculis tincidunt. Praesent ultricies sed felis nec sagittis. 
+					</div><br>
+					<div class = "heading">Gallery</div><br>
+					<div id = "gallery">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+						<img src = "http://via.placeholder.com/100x80">
+					</div><br>
+					<div class = "heading">Purchase</div><br>
+					<div id = "cost">
+						<div class = "items addr">
+							<div>
+								5,000 INR: Admission & Party
+							</div><br><br>
+							<div>
+								5,000 INR: Admission & Party
+							</div><br><br>
+							<div id = "total">
+								<div>Total:</div>
+								<div>13,000 INR</div>
+							</div><br><br>
+							<div id = "purchaseBtn">
+								<button class = "button heading">
+									<i class="fas fa-shopping-cart"></i>  Purchase Now
+								</button>
+							</div>
+						</div>
+						<div class="divider2"></div>
+						<div class = "info addr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor arcu, sagittis ut nibh ac, elementum dapibus eros.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "sideContent">
+				<div id = "search">
+					<span class = "sideHeading">
+						<i class = "fas fa-search"></i> &nbspSearch
+					</span><br><br>
+					<div class = "addr">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</div><br>
+					<div id = "locationSearch">
+						<input id = "mainInput"  type = "text" value = "TechSparks">
+						<input class = "sideInput" type = "text" value = "TechSparks">
+						<input class = "sideInput" type = "text" value = "TechSparks">
+					</div><br>
+					<div>
+						<button class = "button">
+							 <i class="fas fa-paper-plane"></i> &nbspSubmit
+						</button>
+					</div><br>
+					<div class = "addr">* Lorem ipsum dolor sit amet</div>
+				</div>
+				<div id = "ad">
+					<div class = "heading">
+						<h3><center>Ola Introduces Shuttle</center></h3>
+					</div>
+					<div class = "container-img">
+						<img src = "http://via.placeholder.com/500x500">
+					</div>
+					<div class = "adHeading">
+						Accel Partners backed Ola Cabs is all set to introduce a new product line called Shuttle: YS Reports
+					</div>
+					<div class = "addr">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor arcu, sagittis ut nibh ac, elementum dapibus eros.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor arcu, sagittis ut nibh ac, elementum dapibus eros.
+					</div><br>
+					<div id = "adFooter">
+						<div id = "date">Jan 15, 2016</div>
+						<div id = "message">Sponsored Story</div>
+					</div>	
+				</div>
+				<div id = "newsletter">
+					<span class = "sideHeading">
+						<i class="fas fa-inbox"></i> &nbspNewsletter
+					</span><br><br>
+					<div class = "addr">
+						Subscribe to our Newsletter to know more about awesomeness!
+					</div><br>
+					<div>
+						<input type = "text" value = "example@yourstory.com">
+					</div><br>
+					<div>
+						<button class = "button">
+							 <i class="fas fa-paper-plane"></i> &nbspSubmit
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "footer">
+			<div id = "footerlogo">
+				<div id = "logo">
+					Your <br>Story
+				</div>
+				<div><br>
+					<a href = "#" class = "subContent">
+						<i class="far fa-copyright"></i>  YourStory Media Pvt. Ltd
+					</a>
+				</div>
+			</div>
+			<div id = "footerContent1">
+				<div class = "footerHeading">About Yourstory</div>
+				<ul>
+					<li><a href = "#" class = "subContent">About Us</a></li>
+					<li><a href = "#" class = "subContent">Advertise With Us</a></li>
+					<li><a href = "#" class = "subContent">The Team</a></li>
+					<li><a href = "#" class = "subContent">Testimonials</a></li>
+				</ul>
+			</div>
+			<div id = "footerContent2">
+				<div class = "footerHeading">Join Us</div>
+				<ul>
+					<li><a href = "#" class = "subContent">Carrers</a></li>
+					<li><a href = "#" class = "subContent">Our Partners</a></li>
+					<li><a href = "#" class = "subContent">Guest Writers</a></li>
+					<li><a href = "#" class = "subContent">Influencers</a></li>
+					<li><a href = "#" class = "subContent">Marketers</a></li>
+				</ul>
+			</div>
+			<div id = "footerContent3">
+				<div class = "footerHeading">Follow Us</div>
+				<div id = "icons">
+					<div>
+						<a href = "#"><i class="fab fa-linkedin-in social"></i></a>
+					</div>
+					<div>
+						<a href = "#"><i class="fab fa-twitter social"></i></a>
+					</div>
+					<div>
+						<a href = "#"><i class="fab fa-pinterest social"></i></a>
+					</div>
+				</div><br><br>
+				<div id ="badge">
+					<div class = "badge-container">
+						<a href = "#"><img src = "img/google-play-badge.png"></a>
+					</div>
+					<div class = "badge-container">
+						<a href = "#"><img src = "img/google-play-badge.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Font Awesome CDN -->
+  <script defer src = "https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- Google Maps API-->
+  <script src = "js/style.js"></script>
+  <script async defer
+	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrQVZIZyaiH-HYYvxOS0jq-bHd8837yCc&callback=myMap">
+</script>
+</body>
+</html>
