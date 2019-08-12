@@ -4,4 +4,4 @@ This website was given to me by a company as a test during interview process. It
 
 Technologies Used - HTML5, CSS3, Javascript
 
-Live - https://keyur22.github.io/Sample-Industry-Level-Website/
+Live - https://keyur22.github.io/static-one-page-website/
